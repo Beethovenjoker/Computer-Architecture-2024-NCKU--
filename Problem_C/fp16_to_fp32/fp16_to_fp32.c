@@ -1,5 +1,6 @@
-static inline int my_clz(uint32_t x)
-{
+#include <stdio.h>
+#include <stdint.h>
+static inline int my_clz(uint32_t x){
     int count = 0;
     for (int i = 31; i >= 0; --i)
     {
@@ -12,8 +13,7 @@ static inline int my_clz(uint32_t x)
     return count;
 }
 
-static inline uint32_t fp16_to_fp32(uint16_t h)
-{
+static inline uint32_t fp16_to_fp32(uint16_t h){
     const uint32_t w = (uint32_t)h << 16;
     const uint32_t sign = w & UINT32_C(0x80000000);
     const uint32_t nonsign = w & UINT32_C(0x7FFFFFFF);
