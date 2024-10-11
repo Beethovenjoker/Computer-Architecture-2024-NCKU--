@@ -1,6 +1,6 @@
-
-static inline int my_clz(uint32_t x)
-{
+#include <stdio.h>
+#include <stdint.h>
+static inline int my_clz(uint32_t x){
     int count = 0;
     for (int i = 31; i >= 0; --i)
     {
