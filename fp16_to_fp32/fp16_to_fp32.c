@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdint.h>
 static inline int my_clz(uint32_t x)
 {
     int count = 0;
