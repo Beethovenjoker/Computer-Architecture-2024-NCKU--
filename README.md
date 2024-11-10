@@ -1,4 +1,4 @@
-## Computer Architecture HW1(2024 National Cheng-Kung University)
+## RISC-V Assembly and Instruction Pipeline
 ### Advisor:
 Jserv (Ching-Chun Huang)
 ### Introduction:
